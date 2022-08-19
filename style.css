@@ -1,12 +1,13 @@
+
 @font-face {
-  font-family: 'SpoqaHanSansNeo-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+  font-family: 'GowunBatang-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'GowunBatang-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-family: 'SpoqaHanSansNeo-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +16,7 @@
 a{text-decoration: none; color: #365d56;}
 ul{list-style: none;}
 body{background: #fff; font-size: 16px; 
-  font-family: 'SpoqaHanSansNeo-Regular'; position: relative;
+  font-family: 'SpoqaHanSansNeo-Regular'; color: #363636;
 }
 
 /*헤더*/
@@ -32,7 +33,6 @@ header{background-color: #fff;
 
   position:absolute; 
   top:0; left:0; /*부모가 body 자식이 header*/
-  line-height: 20px;
 }
 
 
@@ -73,29 +73,28 @@ header{background-color: #fff;
 
 
 /*컨텐츠1*/
-section{position: relative;}
+section{position: relative; background: url(images/con1bg.png) no-repeat top center;}
 
 
 
-.con1{width: 1700px; margin:0 auto; /*너비 1320에서 넓힘.. 포지션 float로 수정함! */
-  height: 800px; margin: 0 auto; padding-top: 250px; 
+.con1{width: 1320px; margin:0 auto; /*너비 1320에서 넓힘.. 포지션 float로 수정함! */
+  height: 800px; margin: 0 auto; padding-top: 250px; margin-bottom: 200px;
   /* position: relative; */
 }
-.con1_left{float:left; width:1026px; height:927px;}
+.con1 h1{font-family: 'Gowun Batang'; font-style: italic; font-weight: bold; 
+  font-size: 45px; text-align: center; background: url(images/h1bg.jpg) no-repeat center 35px; margin-bottom: 110px;}
+
+.con1_left{float:left; width:px; height:627px;}
 
 
 
-/* .c1img{position: absolute; top: 240px; left: 135px;} */
+.con1 .c1img{float: left; padding-left: 85px;}
 .leaf1{position: absolute; top: 0; right: 0;}
 
-.c1t{float: right; text-align: right; 
+.c1t{float: right;  
+ height: 650px;/*1400px-왼쪽이미지 1024뺀 값 좁아서 패딩안주고 그냥넣어둠*/
 
-  width:674px; height: 800px;/*1400px-왼쪽이미지 1024뺀 값 좁아서 패딩안주고 그냥넣어둠*/
-
-  background: url(images/tstyle.png) no-repeat 0 180px; padding-right: 150px; padding-top: 155px; box-sizing: border-box;}
-.c1t h1{font-family: 'Gowun Batang'; font-style: italic; font-weight: bold; 
-  font-size: 45px; 
-  text-align: right; margin-bottom: 30px;}
+  background: url(images/tstyle.png) no-repeat 0 180px; padding-right: 85px; padding-top: 220px; box-sizing: border-box;}
 .c1t p{font-family: 'Spoqa Han Sans Neo';
    /* font-size: 18px; 폰트사이즈 조절 요구됨*/font-size:16px;
     line-height: 40px;}
@@ -105,7 +104,7 @@ section{position: relative;}
 h2{margin-bottom: 50px; clear: both;}
 .con2 ul li{margin-bottom: 85px;}
 .con2t{margin-bottom: 200px;}
-.glass{width: 600px; height: 550px; float: left; background: #365d56; border-radius: 230px 0 0 0;}
+.jungle{width: 600px; height: 550px; float: left; background: #365d56; border-radius: 230px 0 0 0;}
 .c2t{width: 300px; padding: 135px 40px 40px 60px; box-sizing: border-box;float: left;}
 h3{font-size: 25px; color: #fff;}
 h4{font-size: 45px; color: #fff; margin-bottom: 90px;}
@@ -117,15 +116,15 @@ h4{font-size: 45px; color: #fff; margin-bottom: 90px;}
 .con2 h5 a{ display: inline-block; border: #fff solid 1px; padding: 5px 20px; color: #fff; transition: all 0.5s;}
 .con2 h5 a:hover{background: rgba(255, 255, 255, 0.267); border-radius: 20px;}
 .glass img{width: 300px; float: right; }
-.jungle{width: 600px; height: 550px; float: right; background: #e7a889; border-radius: 230px 0 0 0;}
-.desert{width: 600px; height: 550px; float: left; background: #f6d7b0; border-radius: 230px 0 0 0;}
-.center{width: 600px; height: 550px; float: right; background: #82b1bd; border-radius: 230px 0 0 0;}
+.sea{width: 600px; height: 550px; float: right; background: #7b9d7b; border-radius: 230px 0 0 0;}
+.desert{width: 600px; height: 550px; float: left; background: #b1cec0; border-radius: 230px 0 0 0;}
+.garden{width: 600px; height: 550px; float: right; background: #f6e1b0; border-radius: 230px 0 0 0;}
 
 /*중간배너*/
-.mbanner{width: 100%; height: 400px; background-color: #d6eed8; margin-bottom: 280px; text-align: center;}
+
 .mbanner img{
   /* width: 1920px; 너비주면안됨!!!!*/
-  width:100%; display: block;
+  width:100%; display: block; margin-bottom: 280px;
 }
 
 /*컨텐츠3*/
@@ -133,20 +132,20 @@ h4{font-size: 45px; color: #fff; margin-bottom: 90px;}
 .con3{position: absolute; top: 0; left: 50%; margin-left: -660px; width: 1320px; text-align: center; clear: both; z-index: 99; height: 1300px;}
 .bsection> img:nth-child(1){float: left;}
 .bsection> img:nth-child(2){float: right;}
-.con3 img{display: block; width: 1320px; margin-bottom: 85px;}
+.con3 img{display: block; width: 1320px; }
 .con3 h1{margin-bottom: 85px;}
-.con3 p{font-family: 'Spoqa Han Sans Neo'; font-size: 18px; line-height: 40px;}
+.con3 p{font-family: 'Spoqa Han Sans Neo'; font-size: 18px; line-height: 40px; padding-top: 85px; background: url(images/tstyle.png) center 30px no-repeat;}
 
 .c3bg{width: 100%; height: 470px; background-color: #a7ceba; position: absolute; top: 620px; z-index: 0;}
 
 .prize{width: 1320px; height: 570px;  margin: auto; margin-bottom: 200px;}
 .prize h1{text-align: center; margin-bottom: 85px;}
 .prize ul li{float: left; padding: 0px 40px;}
-.prizetb{border-bottom: 2px solid #333; height: 28px; margin-bottom: 10px;}
+.prizetb{border-bottom: 1px solid #333; height: 28px; margin-bottom: 10px;}
 .prizeimg{margin-bottom: 10px; position: relative; overflow: hidden;}
 .prizetb p:nth-child(1){float: left;  }
 .prizetb p:nth-child(2){float: right;}
-.prizemiddle{height: 33px; margin-bottom: 10px; border-bottom: #333 solid 2px; text-align: center;}
+.prizemiddle{height: 33px; margin-bottom: 10px; border-bottom: #333 solid 1px; text-align: center;}
 .prizeimg a img{display: block; border-radius: 0 60px 0 0;transition: all 0.5s;}
 .prizeimg a:hover img{border-radius: 0;  }
 
