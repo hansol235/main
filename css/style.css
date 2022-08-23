@@ -1,0 +1,185 @@
+
+@font-face {
+  font-family: 'GowunBatang-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: #365d56;}
+ul{list-style: none;}
+body{background: #fff; font-size: 16px; 
+  font-family: 'SpoqaHanSansNeo-Regular'; color: #363636;
+}
+
+/*헤더*/
+header{background-color: #fff; 
+
+  height:  940px;
+  /* margin-bottom: 80px; */
+
+  width:100%;
+   height:170px; /*이미지 높이가 높은편이라 a태그가 좀 아래에서 잡힘*/
+
+  background: url(../images/headerstyle.png)no-repeat center top;
+  background-size: cover;
+
+  position:absolute; 
+  top:0; left:0; /*부모가 body 자식이 header*/
+}
+
+
+
+.headerbg{ width:100%;
+  /* margin: 0 auto;  */
+  /* width: 1920px;  */
+  display: block; text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); position: absolute; z-index: 3; margin-left: -960px; left: 50%;}
+.navbg{background-color: #fff;width: 100%; height: 78px; position: absolute; top: 0; z-index: 2; box-shadow: 5px, 5px, 5px, rgba(0, 0, 0, 0.3) ;}
+.nav{width: 1320px; margin: 0 auto; height: 78px; position: absolute; top: 0; left: 50%; margin-left: -660px; text-align: center;z-index: 5;}
+.menu1{float: left; font-size: 20px; font-weight: bold; }
+.menu2{float: right; font-size: 20px; font-weight: bold; }
+.menu1 li, .menu2 li{float: left; margin: 30px 0;}
+.menu1 li a:hover, .menu2 li a:hover{color: #a7ceba;}
+.menu1>li>a:hover .solid, .menu2>li>a:hover .solid{transform:scaleX(1);
+    opacity:1;
+    visibility:visible;}	
+.solid{width:100%;
+    margin-top:5px;
+    height:2px;
+    background:#365d56;
+    visibility:hidden;
+    opacity:0;
+    transform:scaleX(0);
+    transition-duration:0.5s;}
+.m1{padding-right: 220px;}
+.m2{padding-left: 270px;}
+
+.logo{position: absolute; top: 11px; left: 50%; margin-left: -82.5px;}
+
+/*메인배너*/
+.main{z-index: 1; text-align: center;}
+
+.main img{
+  /* width: 1920px; */
+  width:100%; display:block;
+ }
+
+
+/*컨텐츠1*/
+section{position: relative; background: url(../images/con1bg.png) no-repeat top center;
+  overflow: hidden;
+
+}
+
+
+
+.con1{width: 1320px; margin:0 auto; /*너비 1320에서 넓힘.. 포지션 float로 수정함! */
+  height: 800px; margin: 0 auto; padding-top: 250px; margin-bottom: 200px;
+  /* position: relative; */
+}
+.con1 h1{font-family: 'Gowun Batang'; font-style: italic; font-weight: bold; 
+  font-size: 45px; text-align: center; background: url(../images/h1bg.jpg) no-repeat center 35px; margin-bottom: 110px;}
+
+.con1_left{float:left; width:px; height:627px;}
+
+
+
+.con1 .c1img{float: left; padding-left: 85px;}
+.leaf1{position: absolute; top: 0; right: 0;}
+
+.c1t{float: right;  
+ height: 650px;/*1400px-왼쪽이미지 1024뺀 값 좁아서 패딩안주고 그냥넣어둠*/
+
+  background: url(../images/tstyle.png) no-repeat 0 180px; padding-right: 85px; padding-top: 220px; box-sizing: border-box;}
+.c1t p{font-family: 'Spoqa Han Sans Neo';
+   /* font-size: 18px; 폰트사이즈 조절 요구됨*/font-size:16px;
+    line-height: 40px;}
+
+/*컨텐츠2*/
+.con2{ width: 1320px; margin: auto; height: 1500px; margin-bottom: 250px; position: relative;}
+h2{margin-bottom: 50px; clear: both;}
+.con2 ul li{margin-bottom: 85px;}
+.con2t{margin-bottom: 200px;}
+.jungle{width: 600px; height: 550px; float: left; background: #365d56; border-radius: 230px 0 0 0;}
+.c2t{width: 300px; padding: 135px 40px 40px 60px; box-sizing: border-box;float: left;}
+h3{font-size: 25px; color: #fff;}
+h4{font-size: 45px; color: #fff; margin-bottom: 90px;}
+.con2 ul li p{color: #fff; margin-bottom: 100px; }
+.con2 h5{text-align: center; position: absolute; bottom: 10%; left: 16%;}
+.con2> p, h2{text-align: center;}
+
+
+.con2 h5 a{ display: inline-block; border: #fff solid 1px; padding: 5px 20px; color: #fff; transition: all 0.5s;}
+.con2 h5 a:hover{background: rgba(255, 255, 255, 0.267); border-radius: 20px;}
+.glass img{width: 300px; float: right; }
+.sea{width: 600px; height: 550px; float: right; background: #7b9d7b; border-radius: 230px 0 0 0;}
+.desert{width: 600px; height: 550px; float: left; background: #b1cec0; border-radius: 230px 0 0 0;}
+.garden{width: 600px; height: 550px; float: right; background: #f6e1b0; border-radius: 230px 0 0 0;}
+
+/*중간배너*/
+
+.mbanner img{
+  /* width: 1920px; 너비주면안됨!!!!*/
+  width:100%; display: block; margin-bottom: 280px;
+}
+
+/*컨텐츠3*/
+.bsection{position: relative; height: 1300px; overflow: hidden;}
+.con3{position: absolute; top: 0; left: 50%; margin-left: -660px; width: 1320px; text-align: center; clear: both; z-index: 99; height: 1300px;}
+.bsection> img:nth-child(1){float: left;}
+.bsection> img:nth-child(2){float: right;}
+.con3 img{display: block; width: 1320px; }
+.con3 h1{margin-bottom: 85px;}
+.con3 p{font-family: 'Spoqa Han Sans Neo'; font-size: 18px; line-height: 40px; padding-top: 85px; background: url(../images/tstyle.png) center 30px no-repeat;}
+
+.c3bg{width: 100%; height: 470px; background-color: #a7ceba; position: absolute; top: 620px; z-index: 0;}
+
+.prize{width: 1320px; height: 570px;  margin: auto; margin-bottom: 200px;}
+.prize h1{text-align: center; margin-bottom: 85px;}
+.prize ul li{float: left; padding: 0px 40px;}
+.prizetb{border-bottom: 1px solid #333; height: 28px; margin-bottom: 10px;}
+.prizeimg{margin-bottom: 10px; position: relative; overflow: hidden;}
+.prizetb p:nth-child(1){float: left;  }
+.prizetb p:nth-child(2){float: right;}
+.prizemiddle{height: 33px; margin-bottom: 10px; border-bottom: #333 solid 1px; text-align: center;}
+.prizeimg a img{display: block; border-radius: 0 60px 0 0;transition: all 0.5s;}
+.prizeimg a:hover img{border-radius: 0;  }
+
+.prizeimg .graybox{position: absolute; top: 0; left: 0; width: 250px; height: 300px; background-color: rgba(0, 0, 0, 0);  transform: translate(-250px);transition: all 0.8s; text-align: center;box-sizing: border-box; padding: 125px 0px;}
+.prizeimg a:hover .graybox{display: block; transform: scale(1, 1); background-color: rgba(0, 0, 0, 0.3);transform: translate(0px)}
+
+.load{width: 1320px; margin: 0 auto; text-align: center; margin-bottom: 200px;}
+.load h1{margin-bottom: 85px;}
+
+.sns{width: 1320px; margin: 0 auto; text-align: center; margin-bottom: 200px;}
+.sns h1{margin-bottom: 85px;}
+.sns a{display: inline-block; width: 200px; height: 270px; margin: 0 5px; overflow: hidden;}
+.sns a img{transform: scale(1,1); transition: all 0.8s;}
+.sns a:hover img{transform: scale(1.2,1.2);}
+
+footer{width: 100%; height: 355px; background: url(../images/footerbg.jpg); font-weight: 900; color: #365d56; line-height: 40px;}
+.footer_inner{width: 1320px; margin: 0 auto; padding-top: 50px}
+.footer_l{float: left; }
+.footer_r{float: right;}
+.footer_inner> a{text-align: center;}
+.footer_t1{ margin-bottom: 50px;}
+.footer_r a{display: block; position: relative;}
+.footer_r a:hover img{ border-radius: 50%; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3) inset; border-radius: 50%;}
+
+.footer_bottom{width: 860px; padding-left: 361px; margin-bottom: 20px; clear: both; margin-top: 130px;}
+.footer_t2{float: left; padding-right: 40px;}
+.sitemap{float: right;}
+.footer_inner a{display: inline-block; padding-right: 40px;}
+.copy{text-align: center;}
+
+
+
+
+
