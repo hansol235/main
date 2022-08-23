@@ -73,7 +73,10 @@ header{background-color: #fff;
 
 
 /*컨텐츠1*/
-section{position: relative; background: url(images/con1bg.png) no-repeat top center;}
+section{position: relative; background: url(images/con1bg.png) no-repeat top center;
+  overflow: hidden;
+
+}
 
 
 
@@ -128,7 +131,7 @@ h4{font-size: 45px; color: #fff; margin-bottom: 90px;}
 }
 
 /*컨텐츠3*/
-.bsection{position: relative; height: 1300px;}
+.bsection{position: relative; height: 1300px; overflow: hidden;}
 .con3{position: absolute; top: 0; left: 50%; margin-left: -660px; width: 1320px; text-align: center; clear: both; z-index: 99; height: 1300px;}
 .bsection> img:nth-child(1){float: left;}
 .bsection> img:nth-child(2){float: right;}
